@@ -128,6 +128,10 @@ class Calculator{
     fun division(num1: Int, num2: Int): Int {
         return num1 / num2
     }
+
+    fun remainder(num1: Int, num2: Int): Int {
+        return num1 % num2
+    }
 }
 
 //입력받은 연산자에 맞게 계산하여 반환
@@ -137,6 +141,7 @@ fun calculate(num1: Int, operator : String, num2 : Int): Int {
         "-" -> return Calculator().minus(num1, num2)
         "*" -> return Calculator().multiply(num1, num2)
         "/" -> return Calculator().division(num1, num2)
+        "%" -> return Calculator().remainder(num1, num2)
     }
     return 0
 }
