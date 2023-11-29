@@ -9,7 +9,7 @@ fun main() {
     var operator : String
     var num1 : Int
     var num2 : Int
-    var operators = arrayOf("+", "-", "*", "/")
+    var operators = arrayOf("+", "-", "*", "/", "%")
     var reCalculate : Int
     var reOperator : String
 
